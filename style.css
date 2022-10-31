@@ -75,6 +75,7 @@ ul li {
 
 li a {
   color: white;
+  list-style: none;
 }
 
 .portfolio {
