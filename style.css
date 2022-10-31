@@ -1,7 +1,14 @@
 /* nejsme vcerejsi, pouzivame moderni a intuitivni box model */
 /* toto je černá magie, na kterou nešahej! */
-html { box-sizing: border-box; }
-*, ::after, ::before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
 
 /*
 BARVY
@@ -17,5 +24,110 @@ tlačítko twitter          #1da1f2
 
 body {
   background-color: #bdc3c7;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+
 }
+
+
+.hlavicka {
+  display: flex;
+
+}
+
+.logo {
+  background-color: #b92e81;
+  border-radius: 50%;
+  position: fixed;
+  right: 77%;
+  top: 27%;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+.foto {
+  width: 100%;
+}
+
+
+.obsah {
+  text-align: justify;
+  padding: 0 30px 30px 30px;
+  color: rgb(223, 223, 217);
+}
+
+.jmeno {
+  color: white;
+  text-align: left;
+}
+
+.profil {
+  background-color: #31363b;
+  width: 25%;
+  justify-content: center;
+}
+
+ul li {
+
+  list-style: none;
+  color: white;
+}
+
+li a {
+  color: white;
+}
+
+.portfolio {
+  display: flex;
+  padding-top: 8%;
+  padding-left: 23%;
+  padding-bottom: 8%;
+}
+
+.facebook,
+.twitter {
+  display: inline-block;
+  padding: 20px;
+  text-align: center;
+
+}
+
+.portfolio:hover {
+  background-color: #e74c3c;
+  width: 80%;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.twitter:hover {
+  background-color: #1da1f2;
+  width: auto;
+}
+
+/*
+ul {
+  list-style: none;
+  color: white;
+  justify-content: center;
+  text-transform: uppercase;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.portfolio {
+  display: flex;
+  align-items: flex-start;
+}
+
+.facebook,
+.twitter {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+
+*/
 
